@@ -14,6 +14,9 @@ let router = createRouter({
       path: '/', component: layout,
       children: [
         { path: '', component: () => import('@/views/home/index.vue') },
+        { path: '/login', component: () => import('@/views/login/index.vue') },
+        { path: '/donate', component: () => import('@/views/donate/index.vue') },
+        { path: '/project', component: () => import('@/views/project/index.vue') },
       ]
     },
   ],
